@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Tarefas</title>
+    <!-- Conecta com o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minhas Tarefas</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Adicionar Nova Tarefa</h2>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Nome da tarefa" required>
+                <input type="date" id="task-date" required>
+                <input type="time" id="task-time" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+        <div class="tasks-container">
+            <h2>Lista de Tarefas</h2>
+            <ul id="task-list">
+                <!-- As tarefas serão inseridas aqui pelo JavaScript -->
+            </ul>
+        </div>
+    </main>
+    
+    <!-- Conecta com o arquivo de lógica JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
